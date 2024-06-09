@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "first_name": "Tom",
+    "last_name": "Green",
+    "phone": "555 666 777"
+  },
+  {
+    "id": 2,
+    "first_name": "Alice",
+    "last_name": "Bright",
+    "phone": "444 555 666"
+  },
+  {
+    "id": 3,
+    "first_name": "Bob",
+    "last_name": "Brown",
+    "phone": "777 888 999"
+  }
+]
