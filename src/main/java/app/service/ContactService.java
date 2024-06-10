@@ -20,8 +20,8 @@ public class ContactService {
         List<Contact> list =
                 StreamSupport.stream(iterable.spliterator(), false)
                         .map(contact -> new Contact(contact.getId(),
-                                Constants.URL_NAMES + contact.getFirst_name(),
-                                contact.getLast_name(),
+                                Constants.URL_NAMES + contact.getFirstName(),
+                                contact.getLastName(),
                                 contact.getPhone()))
                         .toList();
         return new ArrayList<>(list);

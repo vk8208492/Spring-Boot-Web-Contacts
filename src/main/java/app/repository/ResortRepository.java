@@ -39,8 +39,8 @@ public class ResortRepository {
             reader.close();
             return list.stream()
                     .map(contact -> new Resort(contact.getId(),
-                            Constants.URL_NAMES + contact.getFirst_name(),
-                            contact.getLast_name(),contact.getPhone()))
+                            Constants.URL_NAMES + contact.getFirstName(),
+                            contact.getLastName(),contact.getPhone()))
                     .toList();
         } catch (Exception ex) {
             LOGGER.info("ResortRepository msg: " + ex.getMessage());

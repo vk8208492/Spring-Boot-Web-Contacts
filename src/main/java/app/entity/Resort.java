@@ -6,8 +6,8 @@ import lombok.*;
 @NoArgsConstructor
 public class Resort {
     private int id;
-    private String first_name;
-    private String last_name;
+    private String firstName;
+    private String lastName;
     private String phone;
 
 }
