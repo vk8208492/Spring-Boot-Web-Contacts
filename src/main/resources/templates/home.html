@@ -24,12 +24,12 @@ See: https://stackoverflow.com/questions/38730992/thymleaf-for-spring-in-intelli
         <i class="bi-sun-fill" style="font-size: 3rem; color: #f1f73e;"></i>&nbsp;Contacts
     </div>
     <div>
-        <img th:src="@{telephone_book.png}" class="img-fluid" alt="image">
+        <img th:src="@{telephone_book.png}" class="img-telephone_book.png" alt="telephone_book.png">
         </div>
         <div class="container">
             <h3>Contacts</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                <div class="card p-2 m-0.5" th:each="place:${places}">
+                <div class="card p-2 m-0.5" th:each="contact:${contacts}">
                     <img th:src="@{${telephone_book.png}}" class="telephone_book.png-top" alt="telephone_book.png">
                     <div class="telephone_book.png">
                         <p class="card-text visually-hidden" th:text="${contacts.id}"></p>
@@ -44,7 +44,7 @@ See: https://stackoverflow.com/questions/38730992/thymleaf-for-spring-in-intelli
             <h3>Resorts</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="card p-2 m-0.5" th:each="resort:${resorts}">
-                    <img th:src="@{${resort.img}}" class="telephone_book.png-top" alt="telephone_book.png-img">
+                    <img th:src="@{${telephone_book.png}}" class="telephone_book.png-top" alt="telephone_book.png">
                     <div class="card-body">
                         <p class="card-text visually-hidden" th:text="${resort.id}"></p>
                         <p class="card-text" th:text="${resort.first_name}"></p>
@@ -72,7 +72,7 @@ See: https://stackoverflow.com/questions/38730992/thymleaf-for-spring-in-intelli
                 </div>
                 <div class="modal-body justify-content-center">
                     <img th:src="@{images/telephone_book.png}" alt="image">
-                    <p style="font-size: 16px; color: #c72c67;">Sea Hotel. Three nights FREE.</p>
+                    <p style="font-size: 16px; color: #c72c67;">Contacts. Three nights FREE.</p>
                 </div>
             </div>
         </div>

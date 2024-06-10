@@ -38,9 +38,9 @@ public class ResortRepository {
                     new TypeToken<List<Resort>>() {}.getType());
             reader.close();
             return list.stream()
-                    .map(tour -> new Resort(tour.getId(),
-                            Constants.URL_NAMES + tour.getFirst_name(),
-                            tour.getLast_name(),tour.getPhone()))
+                    .map(contact -> new Resort(contact.getId(),
+                            Constants.URL_NAMES + contact.getFirst_name(),
+                            contact.getLast_name(),contact.getPhone()))
                     .toList();
         } catch (Exception ex) {
             LOGGER.info("ResortRepository msg: " + ex.getMessage());

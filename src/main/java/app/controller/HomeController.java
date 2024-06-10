@@ -20,7 +20,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String getHome(Model model) throws URISyntaxException, IOException {
-        model.addAttribute("contacts", contactService.getTours());
+        model.addAttribute("contacts", contactService.getContact());
         model.addAttribute("resorts", resortService.getResorts());
         return "home";
     }
